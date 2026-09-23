@@ -22,7 +22,7 @@ The corresponding simulation results are also provided as `.txt` files.
 
 This folder contains the **general configurable simulation code**, which can work with different network topologies.
 
-For details on how to configure the simulation, refer to the `README.md` inside the folder.
+For details on how to configure the simulation, refer to the [README.md](./%231%20Configurable%20General%20Code%20OHC%20Based/README.md) inside the folder.
 
 For a list of tested topologies, refer to the **Example Topologies** folder.
 
