@@ -7,7 +7,7 @@ DOI: 10.1109/ICCCN58024.2023.10230145
 
 ## Repository Structure
 
-### #0 Initial Experimental Codes
+### [#0](./%230%20Initial%20Experimental%20Code%20LiteCast%20Paper%20Example/) Initial Experimental Codes
 
 This folder contains simulations focused on reproducing the results of the **six-node network trace** given in **Fig. 4** of the paper.
 
@@ -18,7 +18,7 @@ Two implementations are provided:
 
 The corresponding simulation results are also provided as `.txt` files.
 
-### #1 General Configurable Simulation
+### [#1](./%231%20Configurable%20General%20Code%20OHC%20Based/) General Configurable Simulation
 
 This folder contains the **general configurable simulation code**, which can work with different network topologies.
 
@@ -26,13 +26,13 @@ For details on how to configure the simulation, refer to the [README.md](./%231%
 
 For a list of tested topologies, refer to the [Example Topologies](./Example%20Topologies/) folder.
 
-### #2 Single-File General Simulation
+### [#2](./%232%20General%20Code%20Single%20File%20OHC%20Based/) Single-File General Simulation
 
 This folder contains the **general simulation code in a single C++ file**.
 
 The simulation is still configurable; however, configuration requires navigating through and modifying the relevant sections of the code.
 
-### #3 Simulation with Packet Discard Modification
+### [#3](./%233%20General%20Code%20Single%20File%20TTL%20Based/) Simulation with Packet Discard Modification
 
 This folder contains the **general simulation code with a modification to how a node discards a packet**.
 
@@ -42,6 +42,6 @@ However, introducing this mechanism resulted in a conflict with the operation of
 
 For more details, refer to the **Presentation Explaining This Conflict**.
 
-### #4 DCube Topology Simulation
+### [#4](./%234%20DCube%20Topology%20Reliability%20and%20Latency%20Results/) DCube Topology Simulation
 
 This folder contains the **general simulation code executed on the DCube topology with varying slot sizes** to reproduce the results presented in **Fig. 11** of the paper.
