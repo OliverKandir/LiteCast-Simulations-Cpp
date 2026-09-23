@@ -1,4 +1,4 @@
-**#1 Topology-related details must be configured in `Topology.cpp`.**
+## #1 Topology-related details must be configured in `Topology.cpp`.
 
 The `NodePositions` structure stores the x and y coordinates of the nodes. For example, if there are 3 nodes, this structure will contain the x and y coordinates of all 3 nodes.
 
@@ -10,9 +10,8 @@ It is essential to specify the **Node ID**, its **coordinates**, and its **list 
 
 For example, if there are 3 nodes, there must be 3 node initializations inside the `initializeTopology()` method.
 
-**#2 Protocol-specific configurations can be configured in `Configuration.cpp`.**
-
-Configuration Details
+## #2 Protocol-specific configurations can be configured in `Configuration.cpp`.
+**Configuration Details**
 
 `const int TIME_SLOT`
 
