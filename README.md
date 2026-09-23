@@ -24,7 +24,7 @@ This folder contains the **general configurable simulation code**, which can wor
 
 For details on how to configure the simulation, refer to the [README.md](./%231%20Configurable%20General%20Code%20OHC%20Based/README.md) inside the folder.
 
-For a list of tested topologies, refer to the **Example Topologies** folder.
+For a list of tested topologies, refer to the [Example Topologies](./Example%20Topologies/) folder.
 
 ### #2 Single-File General Simulation
 
