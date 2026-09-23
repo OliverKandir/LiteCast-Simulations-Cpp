@@ -42,6 +42,6 @@ However, introducing this mechanism resulted in a conflict with the operation of
 
 For more details, refer to the **Presentation Explaining This Conflict**.
 
-### #5 DCube Topology Simulation
+### #4 DCube Topology Simulation
 
 This folder contains the **general simulation code executed on the DCube topology with varying slot sizes** to reproduce the results presented in **Fig. 11** of the paper.
