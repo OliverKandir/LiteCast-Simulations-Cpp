@@ -1,8 +1,17 @@
+# DCube Topology
 
-Center Node ID = 17
+This folder contains the **DCube topology configuration** used in the LiteCast simulations.
 
-Node Positions
+## Topology Configuration
 
+- **Number of Nodes:** 47
+- **Center Node ID:** 17
+
+## Node Positions
+
+The following C++ `NodePositions` vector defines the `(x, y)` coordinates of the 47 nodes:
+
+```cpp
 vector<pair<double, double>> NodePositions = {
     {118.08, 1133.28}, {27.36, 1052.64},
     {72.00, 964.80}, {200.16, 1072.80},
@@ -29,9 +38,13 @@ vector<pair<double, double>> NodePositions = {
     {1320.48, 830.88}, {1199.52, 1104.48},
     {1324.80, 1016.64}
 };
+```
 
-Nodes Initialization
+## Nodes Initialization
 
+Each node is initialized with its node ID, position, and list of neighboring nodes.
+
+```cpp
 Nodes[1] = new Node(1, NodePositions[0].first, NodePositions[0].second, {2, 3, 4});
 Nodes[2] = new Node(2, NodePositions[1].first, NodePositions[1].second, {1, 3, 4, 5});
 Nodes[3] = new Node(3, NodePositions[2].first, NodePositions[2].second, {1, 2, 4, 5});
@@ -79,5 +92,10 @@ Nodes[44] = new Node(44, NodePositions[43].first, NodePositions[43].second, {24,
 Nodes[45] = new Node(45, NodePositions[44].first, NodePositions[44].second, {37, 38, 39, 41, 42, 43, 44});
 Nodes[46] = new Node(46, NodePositions[45].first, NodePositions[45].second, {29, 41, 47});
 Nodes[47] = new Node(47, NodePositions[46].first, NodePositions[46].second, {41, 46});
+```
 
-Topology
+## DCube Topology Visualization
+
+The following figure shows the DCube topology, including node positions, connectivity, layer assignments, and layer boundaries.
+
+![DCube Topology](DCube_Topology.png)
