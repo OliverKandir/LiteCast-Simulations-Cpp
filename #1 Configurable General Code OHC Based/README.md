@@ -10,7 +10,7 @@ It is essential to specify the **Node ID**, its **coordinates**, and its **list 
 
 For example, if there are 3 nodes, there must be 3 node initializations inside the `initializeTopology()` method.
 
-## #2 Protocol-specific configurations can be configured in [`Configuration.cpp`]((./Configuration.cpp)).
+## #2 Protocol-specific configurations can be configured in [`Configuration.cpp`](./Configuration.cpp).
 **Configuration Details**
 
 `const int TIME_SLOT`
