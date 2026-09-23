@@ -1,0 +1,282 @@
+==============================================================
+all even parity nodes
+104 109 
+all odd parity nodes
+35 66 72 81 
+==============================================================
+
+Slot: 1
+transmitters: 35 66 72 81 
+receivers : 104 109 
+
+
+================ QUEUE STATUS AT SLOT 1 =================
+
+Node 35:
+  Subslot 0: (35,10) 
+
+Node 66:
+  Subslot 1: (66,10) 
+
+Node 72:
+  Subslot 2: (72,10) 
+
+Node 81:
+  Subslot 1: (81,10) 
+
+Node 104:
+  Subslot 4: (104,10) 
+
+Node 109:
+  Subslot 4: (109,10) 
+
+================================================
+
+================ END OF SLOT 1 =================
+
+Node 35  : 35   66   
+Node 66  : 35   66   
+Node 72  : 72   81   
+Node 81  : 72   81   
+Node 104 : 35   66   72   104  
+Node 109 : 72   81   109  
+
+================================================
+
+================ QUEUE STATUS AT SLOT 1 =================
+
+Node 35:
+  Subslot 0: (35,9) 
+  Subslot 1: (66,1) 
+
+Node 66:
+  Subslot 0: (35,1) 
+  Subslot 1: (66,9) 
+
+Node 72:
+  Subslot 1: (81,1) 
+  Subslot 2: (72,9) 
+
+Node 81:
+  Subslot 1: (81,9) 
+  Subslot 2: (72,1) 
+
+Node 104:
+  Subslot 0: (35,1) 
+  Subslot 1: (66,1) 
+  Subslot 2: (72,1) 
+  Subslot 4: (104,10) 
+
+Node 109:
+  Subslot 1: (81,1) 
+  Subslot 2: (72,1) 
+  Subslot 4: (109,10) 
+
+================================================
+
+Slot: 2
+transmitters: 104 109 
+receivers : 35 66 72 81 
+
+
+================ END OF SLOT 2 =================
+
+Node 35  : 35   66   72   104  
+Node 66  : 35   66   72   104  
+Node 72  : 35   66   72   81   104  
+Node 81  : 35   66   72   81   104  
+Node 104 : 35   66   72   104  
+Node 109 : 72   81   109  
+
+================================================
+
+================ QUEUE STATUS AT SLOT 2 =================
+
+Node 35:
+  Subslot 1: (66,1) 
+  Subslot 2: (72,1) 
+  Subslot 4: (104,1) 
+
+Node 66:
+  Subslot 0: (35,1) 
+  Subslot 2: (72,1) 
+  Subslot 4: (104,1) 
+
+Node 72:
+  Subslot 0: (35,1) 
+  Subslot 1: (81,1) 
+  Subslot 3: (66,3) 
+  Subslot 4: (104,1) 
+
+Node 81:
+  Subslot 0: (35,1) 
+  Subslot 1: (81,9) 
+  Subslot 2: (72,1) 
+  Subslot 3: (66,3) 
+  Subslot 4: (104,1) 
+
+Node 104:
+  Subslot 4: (104,9) 
+
+Node 109:
+  Subslot 4: (109,9) 
+
+================================================
+
+Slot: 3
+transmitters: 35 66 72 81 
+receivers : 104 109 
+
+
+================ END OF SLOT 3 =================
+
+Node 35  : 35   66   72   104  
+Node 66  : 35   66   72   104  
+Node 72  : 35   66   72   81   104  
+Node 81  : 35   66   72   81   104  
+Node 104 : 35   66   72   81   104  
+Node 109 : 35   66   72   81   104  109  
+
+================================================
+
+================ QUEUE STATUS AT SLOT 3 =================
+
+Node 35:
+  All queues empty
+
+Node 66:
+  All queues empty
+
+Node 72:
+  Subslot 3: (66,2) 
+
+Node 81:
+  Subslot 1: (81,8) 
+  Subslot 3: (66,2) 
+
+Node 104:
+  Subslot 1: (81,1) 
+  Subslot 3: (66,1) 
+
+Node 109:
+  Subslot 0: (35,1) 
+  Subslot 3: (66,1) 
+  Subslot 4: (109,9) (104,1) 
+
+================================================
+
+Slot: 4
+transmitters: 104 109 
+receivers : 35 66 72 81 
+
+
+================ END OF SLOT 4 =================
+
+Node 35  : 35   66   72   81   104  
+Node 66  : 35   66   72   81   104  
+Node 72  : 35   66   72   81   104  109  
+Node 81  : 35   66   72   81   104  109  
+Node 104 : 35   66   72   81   104  
+Node 109 : 35   66   72   81   104  109  
+
+================================================
+
+================ QUEUE STATUS AT SLOT 4 =================
+
+Node 35:
+  Subslot 1: (81,1) 
+  Subslot 3: (66,1) 
+
+Node 66:
+  Subslot 1: (81,1) 
+  Subslot 3: (66,1) 
+
+Node 72:
+  Subslot 4: (109,1) 
+
+Node 81:
+  Subslot 4: (109,1) 
+
+Node 104:
+  All queues empty
+
+Node 109:
+  Subslot 4: (109,8) (104,1) 
+
+================================================
+
+Slot: 5
+transmitters: 35 66 72 81 
+receivers : 104 109 
+
+
+================ END OF SLOT 5 =================
+
+Node 35  : 35   66   72   81   104  
+Node 66  : 35   66   72   81   104  
+Node 72  : 35   66   72   81   104  109  
+Node 81  : 35   66   72   81   104  109  
+Node 104 : 35   66   72   81   104  109  
+Node 109 : 35   66   72   81   104  109  
+
+================================================
+
+================ QUEUE STATUS AT SLOT 5 =================
+
+Node 35:
+  All queues empty
+
+Node 66:
+  All queues empty
+
+Node 72:
+  All queues empty
+
+Node 81:
+  All queues empty
+
+Node 104:
+  Subslot 4: (109,1) 
+
+Node 109:
+  Subslot 4: (104,1) 
+
+================================================
+
+Slot: 6
+transmitters: 104 109 
+receivers : 35 66 72 81 
+
+
+================ END OF SLOT 6 =================
+
+Node 35  : 35   66   72   81   104  109  
+Node 66  : 35   66   72   81   104  109  
+Node 72  : 35   66   72   81   104  109  
+Node 81  : 35   66   72   81   104  109  
+Node 104 : 35   66   72   81   104  109  
+Node 109 : 35   66   72   81   104  109  
+
+================================================
+
+================ QUEUE STATUS AT SLOT 6 =================
+
+Node 35:
+  Subslot 4: (109,1) 
+
+Node 66:
+  Subslot 4: (109,1) 
+
+Node 72:
+  All queues empty
+
+Node 81:
+  All queues empty
+
+Node 104:
+  All queues empty
+
+Node 109:
+  All queues empty
+
+================================================
