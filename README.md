@@ -1,16 +1,47 @@
-This repository contains Various Simulations written in c++ (Autor: Oliver Kandir) to study, verify and improve the working of the published protocol 
+# LiteCast Simulations
 
-LiteCast: Flexible Scalable and Uniform Local Data-Sharing in Real-Time (DOI: 10.1109/ICCCN58024.2023.10230145)
+This repository contains various simulations written in C++ by **Oliver Kandir** to study, verify, and improve the implementation of the published protocol:
 
-Folder #0 Initial Experimental Codes.. contains Simulation focusing on reproducing the results of the Six Node network Trace(Given in Fig.4 of the paper). 
-One with Load Balancing done explicitly to match the Paper Results and One with Load Balancing feature completely removed. Both of the Results are also given in
-txt files.
+**LiteCast: Flexible, Scalable, and Uniform Local Data-Sharing in Real-Time**  
+DOI: 10.1109/ICCCN58024.2023.10230145
 
-Folder #1 Contains configurable General code of the Simulation that can work on any topology (for details on how to configure Read README.md inside the Folder). 
-For a list of tested topologies check the Example Topologies folder.
+## Repository Structure
 
-Folder #2 Contains the General code of the Simulation in a single c++ file, It is still configurable but requires a lot of scrolling around.
+### #0 Initial Experimental Codes
 
-Folder #3 Contains the General code of the Simulation with a little modification on How a node discards a packet (Attempt to incorporate TTL mechanism has been attempted). The mechanism worked perfectly in ensuring a node captures only LC-n data (i.e capture from all Nodes in the Locality), but introduction of this mechanism led to conflict in working of Constructive Interference for more details see the Presentation Explaining this conflict.
+This folder contains simulations focused on reproducing the results of the **six-node network trace** given in **Fig. 4** of the paper.
 
-Folder #5 Contains the General Code simulation run on DCube Topology with varying slot sizes so to reproduce the results of Fig.11 of the the paper.
+Two implementations are provided:
+
+- One with **Load Balancing explicitly implemented** to match the results presented in the paper.
+- One with the **Load Balancing feature completely removed**.
+
+The corresponding simulation results are also provided as `.txt` files.
+
+### #1 General Configurable Simulation
+
+This folder contains the **general configurable simulation code**, which can work with different network topologies.
+
+For details on how to configure the simulation, refer to the `README.md` inside the folder.
+
+For a list of tested topologies, refer to the **Example Topologies** folder.
+
+### #2 Single-File General Simulation
+
+This folder contains the **general simulation code in a single C++ file**.
+
+The simulation is still configurable; however, configuration requires navigating through and modifying the relevant sections of the code.
+
+### #3 Simulation with Packet Discard Modification
+
+This folder contains the **general simulation code with a modification to how a node discards a packet**.
+
+An attempt was made to incorporate a **TTL (Time-to-Live) mechanism**. The mechanism worked as intended in ensuring that a node captures only **LC-n data**, i.e., data captured from all nodes within the locality.
+
+However, introducing this mechanism resulted in a conflict with the operation of **Constructive Interference**.
+
+For more details, refer to the **Presentation Explaining This Conflict**.
+
+### #5 DCube Topology Simulation
+
+This folder contains the **general simulation code executed on the DCube topology with varying slot sizes** to reproduce the results presented in **Fig. 11** of the paper.
