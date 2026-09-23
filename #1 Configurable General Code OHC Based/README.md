@@ -1,33 +1,43 @@
-#1 Topology related details must be configured in Topology.cpp
+#1 Topology-related details must be configured in `Topology.cpp`.
 
-The NodePositions structure basically stores x and y coordinates. So for example you have 3 nodes then this structure would have 3 x and y coordinates.
+The `NodePositions` structure stores the x and y coordinates of the nodes. For example, if there are 3 nodes, this structure will contain the x and y coordinates of all 3 nodes.
 
-However These coordinates are not actually mapped to any particular node.
+However, these coordinates are not directly mapped to any particular node.
 
-The mapping of Cooridinates to any particular node happens in Nodes Initialization via initializeTopology() method.
- 
-It is essential to specify the Node ID, its Coordinates and List of Neighbors (i.e List of Nodes in its current Wireless Range). while Initializing the Nodes.
+The mapping of coordinates to a particular node happens during node initialization through the `initializeTopology()` method.
 
-so for example you have 3 nodes then you must have 3 node initializations inside the initializeTopology() method.
+It is essential to specify the **Node ID**, its **coordinates**, and its **list of neighbors** (i.e., the list of nodes within its current wireless range) while initializing the nodes.
 
-#2 Configuratios specific to the working of Protocol is configurable in Configuration.cpp
+For example, if there are 3 nodes, there must be 3 node initializations inside the `initializeTopology()` method.
 
-Details are as follows
+#2 Protocol-specific configurations can be configured in `Configuration.cpp`.
 
-const int TIME_SLOT: determines how many time slots the simulation runs
+## Configuration Details
 
-const int SUB_SLOTS: determines how many subslots are there in one TIME_SLOT it basically tell the TIME_SLOT size or the Slot Size from the paper.
+### `const int TIME_SLOT`
 
-const int ntxOriginator: ntx associated with the Data is Number of Times the particular data has to be transmitted. nxtOriginator specifically is set by the owner
-of the data. Node that is responsible for producing that data.
+Determines how many time slots the simulation runs for.
 
-const int ntxForwarding: this ntx is set for the data by the intermediate nodes that are not the owener of the data but receives it.
+### `const int SUB_SLOTS`
 
-const int CENTER_NODE_ID: is the ID of a particular node that functions as the originator of the Protocol.
+Determines how many subslots are present in one `TIME_SLOT`. It essentially specifies the `TIME_SLOT` size, or the **Slot Size** referred to in the paper.
 
-const int LC: sets the protocol to capture specific to a locality, So for example LC is set to 3 then the protocol captures data upto LC-3 of 3 hop neighbors.
+### `const int ntxOriginator`
 
+The `ntx` associated with the data specifies the number of times the particular data has to be transmitted.
 
+`ntxOriginator` is specifically set by the owner of the data, i.e., the node responsible for producing that data.
 
+### `const int ntxForwarding`
 
+This `ntx` value is set for the data by intermediate nodes that are not the owner of the data but receive and forward it.
 
+### `const int CENTER_NODE_ID`
+
+Specifies the ID of the particular node that functions as the originator of the protocol.
+
+### `const int LC`
+
+Specifies the locality for which the protocol captures data.
+
+For example, if `LC` is set to `3`, the protocol captures data up to **LC-3**, i.e., from nodes within 3 hops of the center node.
