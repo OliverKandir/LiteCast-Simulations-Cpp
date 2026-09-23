@@ -12,7 +12,7 @@ For example, if there are 3 nodes, there must be 3 node initializations inside t
 
 #2 Protocol-specific configurations can be configured in `Configuration.cpp`.
 
-## Configuration Details
+# Configuration Details
 
 ### `const int TIME_SLOT`
 
