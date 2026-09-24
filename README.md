@@ -40,7 +40,7 @@ An attempt was made to incorporate a **TTL (Time-to-Live) mechanism**. The mecha
 
 However, introducing this mechanism resulted in a conflict with the operation of **Constructive Interference**.
 
-For more details, refer to the **Presentation Explaining This Conflict**.
+For more details, refer to the **[Presentation](./Thesis Part-2.pptx) Explaining This Conflict**.
 
 ### [#4](./%234%20DCube%20Topology%20Reliability%20and%20Latency%20Results/) DCube Topology Simulation
 
