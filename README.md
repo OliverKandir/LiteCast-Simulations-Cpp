@@ -1,6 +1,6 @@
 # LiteCast Simulations
 
-This repository contains various simulations written in C++ by **Oliver Kandir** to study, verify, and improve the implementation of the published protocol:
+This repository contains various simulations written in C++ by **Oliver Kandir (M.Tech. in Computer Science and Engineering, IIT Bhubaneswar)** to study, verify, and improve the implementation/operations of the published protocol:
 
 **LiteCast: Flexible, Scalable, and Uniform Local Data-Sharing in Real-Time**  
 DOI: 10.1109/ICCCN58024.2023.10230145
